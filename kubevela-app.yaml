@@ -1,0 +1,11 @@
+apiVersion: core.oam.dev/v1beta1
+kind: Application
+metadata:
+  name: ci-app
+spec:
+  components:
+    - name: frontend
+      type: webservice
+      properties:
+        image: "nginx:latest"
+        port: 80
